@@ -1,0 +1,7 @@
+for migration :
+1- Open Package Manager
+2-In Root Folder (Folder containt .sln file)
+3- Run >>> 
+dotnet ef --startup-project .\SSO.Api\SSO.Api.csproj migrations add [MigrationName] --project .\SSO.Infrastructure\SSO.Infrastructure.csproj
+4- Run >>>
+dotnet ef --startup-project .\SSO.Api\SSO.Api.csproj database update --project .\SSO.Infrastructure\SSO.Infrastructure.csproj
